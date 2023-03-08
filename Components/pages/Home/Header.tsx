@@ -4,6 +4,7 @@ const Header = () => {
       <h2>this is header</h2>
       <p>development branch added</p>
       <p>homepage branch added</p>
+      <p>check push to homepage branch</p>
     </header>
   );
 };
