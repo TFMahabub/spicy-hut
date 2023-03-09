@@ -13,6 +13,7 @@ const FoundedIn1998 = () => {
             bottomText="A Sophisticated Interpretation Of Traditional Japanese Cuisine"
             leftLine={false}
             rightLine={true}
+            topTextCenter={false}
           />
         </div>
         <Image src={sideImage2} className="" alt="" />

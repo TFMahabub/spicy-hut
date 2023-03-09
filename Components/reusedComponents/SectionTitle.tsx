@@ -3,16 +3,22 @@ interface propsType {
   bottomText: string;
   leftLine: boolean;
   rightLine: boolean;
+  topTextCenter: boolean;
 }
 const SectionTitle = ({
   topText,
   bottomText,
   leftLine,
   rightLine,
+  topTextCenter,
 }: propsType) => {
   return (
     <>
-      <div className="flex gap-4 items-center">
+      <div
+        className={`flex gap-4 items-center ${
+          topTextCenter ? "justify-center" : ""
+        }`}
+      >
         <hr
           className={`w-10 h-[2px] bg-primary ${leftLine ? "block" : "hidden"}`}
         />
