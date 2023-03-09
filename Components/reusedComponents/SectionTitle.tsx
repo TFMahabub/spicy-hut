@@ -1,21 +1,33 @@
-
-interface propsType{
-    topText:string, 
-    bottomText: string;
-    leftLine:boolean;
-    rightLine: boolean;
+interface propsType {
+  topText: string;
+  bottomText: string;
+  leftLine: boolean;
+  rightLine: boolean;
 }
-const SectionTitle = ({topText, bottomText, leftLine, rightLine, }: propsType) => {
-    return (
-        <>
-            <div className="flex gap-4 items-center">
-                <hr className={`w-10 h-[2px] bg-primary ${leftLine? "block":"hidden"}`}/>
-                <h2 className="top_title">{topText}</h2>
-                <hr className={`w-10 h-[2px] bg-primary ${rightLine? "block":"hidden"}`}/>
-            </div>
-            <h3 className="mt-2 text-secondary text-4xl lg:text-7xl font-semibold font-cormorant">{bottomText}</h3>
-        </>
-    );
+const SectionTitle = ({
+  topText,
+  bottomText,
+  leftLine,
+  rightLine,
+}: propsType) => {
+  return (
+    <>
+      <div className="flex gap-4 items-center">
+        <hr
+          className={`w-10 h-[2px] bg-primary ${leftLine ? "block" : "hidden"}`}
+        />
+        <h2 className="top_title">{topText}</h2>
+        <hr
+          className={`w-10 h-[2px] bg-primary ${
+            rightLine ? "block" : "hidden"
+          }`}
+        />
+      </div>
+      <h3 className="mt-2 text-secondary text-4xl lg:text-7xl font-semibold font-cormorant">
+        {bottomText}
+      </h3>
+    </>
+  );
 };
 
 export default SectionTitle;
