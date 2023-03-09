@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const PerfectDiningExperience = () => {
   return (
-    <div className="container flex flex-col lg:flex-row gap-10 justify-between">
+    <div className="section_gap container flex flex-col lg:flex-row gap-10 justify-between">
       <div className="flex-1">
         <Image src={sideImage1} className="" alt="" />
       </div>
@@ -19,7 +19,7 @@ const PerfectDiningExperience = () => {
             rightLine={true}
             topTextCenter={false}
           />
-          <p className="text-secondary tracking-wide text-lg leading-relaxed mt-3">
+          <p className="pText">
             We are located in an excellent location in the center of the city,
             quiet in the middle of the hustle and bustle. Enjoy your meal time
             in a comfortable environment. We can’t wait to serve you at our

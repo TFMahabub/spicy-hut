@@ -3,7 +3,7 @@ import Menus from "./Menus";
 
 const SelectedMenus = () => {
   return (
-    <div>
+    <div className="section_gap">
       <div className="container ">
         <div className="text-center">
           <SectionTitle

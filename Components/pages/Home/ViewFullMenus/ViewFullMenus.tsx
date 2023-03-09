@@ -19,7 +19,7 @@ const ViewFullMenus = () => {
           <h3 className="mt-2 text-center text-secondary text-3xl lg:text-6xl font-semibold font-cormorant">
             View Full <br /> Menus
           </h3>
-          <p className="pText">
+          <p className="pText text-center">
             We serve food, harmony, and laughter. Making delicious food and
             providing a wonderful eating experience. update something
           </p>
@@ -41,7 +41,7 @@ const ViewFullMenus = () => {
           <h3 className="mt-2 text-center text-secondary text-3xl lg:text-6xl font-semibold font-cormorant">
             Chef Selection
           </h3>
-          <p className="pText">
+          <p className="pText text-center">
             We present delicious and enticing dishes with high-quality
             ingredients. There is no set protocol for ordering from the menu.
           </p>

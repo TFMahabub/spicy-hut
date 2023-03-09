@@ -22,8 +22,8 @@ module.exports = {
         'md': '2rem',
       },
       backgroundImage: {
-        'banner_backbround_image': "url('../public/assats/bannerImage.jpg')",
-        'selected_menus_background_image': "url(../public/assats/selectedMenus.jpg)"
+        'banner_background_image': "url('../public/assats/bannerImage.jpg')",
+        'selected_menus_background_image': "url(../public/assats/selectedMenus.jpg)",
       }
     },
   },

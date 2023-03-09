@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const FoundedIn1998 = () => {
   return (
-    <div className="container flex flex-col lg:flex-row gap-10 justify-between">
+    <div className="section_gap container flex flex-col lg:flex-row gap-10 justify-between">
       <div className="flex-1 lg:flex lg:flex-col lg:justify-between">
         <div>
           <SectionTitle

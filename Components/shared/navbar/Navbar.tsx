@@ -5,12 +5,12 @@ import { useState } from "react";
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
   return (
-    <section className="bg-secondary absolute z-50 top-0 w-full">
+    <section className="bg-bodyBackground/80 text-secondary absolute z-50 top-0 w-full">
       <div className="container flex justify-between items-center py-2">
         <div className="items-center flexBetween py-2 px-6">
           <Link href="/">
-            <li className="list-none inline-block text-blck font-semibold text-xl">
-              Mahabub Alam
+            <li className="list-none inline-block text-blck font-semibold tracking-wider text-primary text-2xl">
+              Spicy Heat
             </li>
           </Link>
         </div>
@@ -31,11 +31,17 @@ const Navbar = () => {
             <Link href="/">
               <li>Home</li>
             </Link>
-            <Link href="/">
-              <li>Home</li>
+            <Link href="/about">
+              <li>About</li>
             </Link>
-            <Link href="/">
-              <li>Home</li>
+            <Link href="/contact">
+              <li>Contact</li>
+            </Link>
+            <Link href="/menu">
+              <li>Menu</li>
+            </Link>
+            <Link href="/news">
+              <li>News</li>
             </Link>
           </ul>
         </div>

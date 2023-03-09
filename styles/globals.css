@@ -16,6 +16,9 @@ body {
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
+.full_max_width {
+  @apply max-w-[1488px];
+}
 .flexCenter {
   @apply flex items-center justify-center;
 }
@@ -29,10 +32,10 @@ body {
   @apply grid place-items-center;
 }
 .pText {
-  @apply text-secondary text-center tracking-wide text-lg leading-relaxed mt-3;
+  @apply text-secondary tracking-wide text-lg leading-relaxed mt-3;
 }
 .section_gap {
-  @apply mt-[4rem];
+  @apply mt-[4rem] lg:mt-[7rem];
 }
 /* Banner-content--------------------------- */
 .banner_title_text {
