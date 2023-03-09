@@ -31,6 +31,9 @@ body {
 .pText {
   @apply text-secondary text-center tracking-wide text-lg leading-relaxed mt-3;
 }
+.section_gap {
+  @apply mt-[4rem];
+}
 /* Banner-content--------------------------- */
 .banner_title_text {
   @apply text-[2rem] md:text-6xl lg:text-7xl font-semibold text-center leading-9 lg:leading-none;
