@@ -11,7 +11,6 @@ const Header = () => {
             <button className="primary_button"><Link href={"/"}>Make A ReserVation</Link></button>
           </div>
         </div>
-      </div>
     </header>
   );
 };
