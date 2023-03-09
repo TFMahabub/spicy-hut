@@ -6,16 +6,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    color: {
+    colors: {
       primary: "#dd5903",
       secondary: "#fff",
       bodyBackground: "#0e0d0a"
-    },
-    screens: {
-      // 'dextop': {'min': '1279px'},
-      'lg': {'min': '1024px',},
-      'md': {'min':'768px', 'max': '1023px'},
-      'sm': {'max': '767px'},
     },
     
     extend: {
@@ -23,10 +17,13 @@ module.exports = {
         'jost': ['Jost', 'sans-serif'],
         'cormorant': ['Cormorant Garamond', 'serif'],
       },
-      // fontFamily: {
-      //   'jost': ["Jost", sans-serif],
-      //   'cormorant': ['Cormorant Garamond', serif],
-      // },
+      spacing: {
+        'sm': '1rem',
+        'md': '2rem',
+      },
+      backgroundImage: {
+        'banner_backbround_image': "url('../public/assats/bannerImage.jpg')",
+      }
     },
   },
   plugins: [],

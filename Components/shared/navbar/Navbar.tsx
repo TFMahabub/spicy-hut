@@ -5,7 +5,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
   return (
-    <section className="bg-white absolute top-0 w-full">
+    <section className="bg-secondary absolute z-50 top-0 w-full">
       <div className="container flex justify-between items-center py-2">
         <div className="items-center flexBetween py-2 px-6">
           <Link href="/">
