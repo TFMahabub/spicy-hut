@@ -21,7 +21,7 @@ const ViewFullMenus = () => {
           </h3>
           <p className="pText">
             We serve food, harmony, and laughter. Making delicious food and
-            providing a wonderful eating experience.
+            providing a wonderful eating experience. new change
           </p>
           <Link href={"/"}>
             <p className="text-secondary text-center tracking-wide text-lg leading-relaxed mt-8 hover:underline hover:underline-offset-8">
