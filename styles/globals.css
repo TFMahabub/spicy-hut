@@ -5,12 +5,16 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: "#dd5903";
+}
+
 body {
   background-color: #0e0d0a;
   font-family: "Jost", sans-serif;
 }
 .container {
-  @apply max-w-[1488px] mx-auto sm:px-[1rem] md:px-[2rem] lg:px-[4rem];
+  @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
 }
 .flexCenter {
   @apply flex items-center justify-center;
@@ -21,18 +25,23 @@ body {
 .flexItem {
   @apply flex items-center;
 }
-.gridPlaceCenter {
+.grid_place_center {
   @apply grid place-items-center;
 }
 /* Banner-content--------------------------- */
-.bannerTitleText {
-  @apply text-[2rem] md:text-6xl lg:text-7xl font-semibold;
+.banner_title_text {
+  @apply text-[2rem] md:text-6xl lg:text-7xl font-semibold text-center leading-9 lg:leading-none;
 }
 
 /* section-title----------------------------- */
-.topTitle {
-  @apply text-base text-primary font-jost font-semibold tracking-wider uppercase;
+.top_title {
+  @apply text-lg font-jost font-semibold tracking-wider uppercase text-[#dd5903];
 }
 .bottomTitle {
-  @apply text-4xl md:text-5xl lg:text-6xl font-semibold text-secondary;
+  @apply text-4xl md:text-5xl lg:text-6xl font-semibold;
+}
+
+/* button---------------------------------- */
+.primary_button {
+  @apply px-5 lg:px-6 py-3 bg-[#dd5903] text-sm md:text-base font-medium text-[#ffffff] tracking-wider uppercase
 }
