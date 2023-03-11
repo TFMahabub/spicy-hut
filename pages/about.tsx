@@ -1,4 +1,5 @@
 import AboutHeader from "@/Components/pages/About/AboutHeader/AboutHeader";
+import SophisticatedInterpretation from "@/Components/pages/About/SophisticatedInterpretation/SophisticatedInterpretation";
 import BackgroundImageOverlay from "@/Components/reusedComponents/BackgroundImageOverlay";
 
 const about = () => {
@@ -10,6 +11,7 @@ const about = () => {
       >
         <AboutHeader />
       </BackgroundImageOverlay>
+      <SophisticatedInterpretation />
     </>
   );
 };
