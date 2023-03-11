@@ -25,7 +25,13 @@ const SophisticatedInterpretation = () => {
             We continue to be one of the top Japanese restaurants in America,
             attracting countless food lovers from all over the world. Our
             one-of-a-kind menu includes authentic tapas-style Japanese dishes
-            and homemade desserts.
+            and homemade desserts. new update
+          </p>
+          <p className="pText">
+            We continue to be one of the top Japanese restaurants in America,
+            attracting countless food lovers from all over the world. Our
+            one-of-a-kind menu includes authentic tapas-style Japanese dishes
+            and homemade desserts. new update
           </p>
         </div>
       </div>
