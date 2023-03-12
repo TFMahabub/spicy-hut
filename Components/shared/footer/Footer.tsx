@@ -6,7 +6,7 @@ import Youtube from "@/Components/Icons/Youtube";
 const Footer = () => {
   return (
     <footer>
-      <div className="container p-[100px]">
+      <div className="container px-[100px] py-12 border-t-[1px] border-secondary/20 section_gap">
         {/* <Image src={} className="" alt="" /> */}
         <p className="pText text-center">212 Madison Ave, New York, NY 10016</p>
         <div className="flex items-center justify-center gap-2 text-secondary tracking-wide text-lg leading-relaxed">
