@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const SophisticatedInterpretation = () => {
   return (
-    <div className="section_gap container flex flex-col lg:flex-row gap-16 justify-between">
+    <div className="section_gap container flex flex-col-reverse lg:flex-row gap-16 justify-between">
       <div className="flex-1">
-        <Image src={sideImage} className="" alt="" />
+        <Image src={sideImage} className="h-full" alt="" />
       </div>
       <div className="flex-1 lg:flex lg:flex-col lg:justify-between">
         <div>

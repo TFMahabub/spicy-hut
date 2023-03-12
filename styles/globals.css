@@ -54,3 +54,6 @@ body {
 .primary_button {
   @apply px-5 lg:px-6 py-3 bg-[#dd5903] text-sm md:text-base font-medium text-[#ffffff] tracking-wider uppercase;
 }
+.outline_button {
+  @apply px-5 lg:px-6 py-3 border-[1px] border-[#dd5903] hover:bg-primary text-sm md:text-base font-medium text-[#dd5903] hover:text-secondary duration-300 tracking-wider uppercase;
+}
