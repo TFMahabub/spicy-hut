@@ -20,7 +20,10 @@ const WeAreHiring = () => {
           />
           <p className="pText">
             We are looking for chefs and service staff at Patio.Time Sushi and
-            our other branches. Please call or email for details.
+            our other branches. Please call or email for details. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Odit perferendis id
+            voluptas incidunt consequatur nam tempore quos eius dolore
+            perspiciatis.
           </p>
           <div className="space-y-2">
             <p className="tracking-wide text-lg leading-relaxed mt-3 text-secondary/60">
