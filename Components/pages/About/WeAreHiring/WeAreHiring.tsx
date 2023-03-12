@@ -1,7 +1,6 @@
 import SectionTitle from "@/Components/reusedComponents/SectionTitle";
 import sideImage from "@/public/assats/aboutUs(we_are_hiring).jpg";
 import Image from "next/image";
-import Link from "next/link";
 
 const WeAreHiring = () => {
   return (
@@ -36,9 +35,10 @@ const WeAreHiring = () => {
             </p>
             <hr className=" text-[#4e4e4e] w-full h-[1px]" />
           </div>
-          <button className="outline_button mt-3">
+          <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" className="mt-5 button_border_animation text-primary after:bg-primary ">SEND RESUME & APPLY NOW</a>
+          {/* <button className="">
             <Link href={"/apply"}>SEND RESUME & APPLY NOW</Link>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
