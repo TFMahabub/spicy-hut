@@ -54,9 +54,9 @@ body {
 .primary_button {
   @apply px-5 lg:px-6 py-3 bg-[#dd5903] text-sm md:text-base font-medium text-[#ffffff] tracking-wider uppercase;
 }
-.outline_button {
-  @apply px-5 lg:px-6 py-3 border-[1px] border-[#dd5903] hover:bg-primary text-sm md:text-base font-medium text-[#dd5903] hover:text-secondary duration-300 tracking-wider uppercase;
-}
 .button_border_animation {
-  @apply inline-block after:content-[''] after:block after:w-0 after:h-[2px] after:transition-all after:ease-in-out after:duration-300 hover:after:w-full
+  @apply inline-block after:content-[''] after:block after:w-full after:h-[2px] after:transition-all after:ease-in-out after:duration-300 hover:after:w-0
+}
+.button_border_animation_end_to_start {
+  @apply inline-block after:content-[''] after:block after:w-full after:h-[2px] after:transition-all after:ease-in-out after:duration-300 hover:after:w-0
 }

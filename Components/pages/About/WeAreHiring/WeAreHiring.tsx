@@ -35,7 +35,7 @@ const WeAreHiring = () => {
             </p>
             <hr className=" text-[#4e4e4e] w-full h-[1px]" />
           </div>
-          <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" className="mt-5 button_border_animation text-primary after:bg-primary ">SEND RESUME & APPLY NOW</a>
+          <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" className="mt-5 button_border_animation_end_to_start text-secondary after:bg-primary ">SEND RESUME & APPLY NOW</a>
           {/* <button className="">
             <Link href={"/apply"}>SEND RESUME & APPLY NOW</Link>
           </button> */}
