@@ -22,7 +22,7 @@ const MenuIndex = () => {
                 <div className='flex flex-col flex-wrap md:flex-row md:items-center md:justify-center gap-3'>
                     {
                         menuItems?.map((item, i) => (
-                            <button key={i} onClick={() => setMenuCategory(item?.value)} className='menuItem_button_outLine'>{item?.name}</button>
+                            <button key={i} onClick={() => setMenuCategory(item?.value)} className={`${menuCategory === item?.value ? "menuItem_button_fill" : "menuItem_button_outLine"}`}>{item?.name}</button>
                         ))
                     }
                 </div>
