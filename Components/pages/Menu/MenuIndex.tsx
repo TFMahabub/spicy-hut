@@ -5,6 +5,14 @@ import CartParent from './CartParent';
 const MenuIndex = () => {
     const { menuCategory, setMenuCategory } = useMenuCategory();
     console.log(menuCategory);
+    const menuItems = [
+        { name: "Japanese Tapas", value: "japanese-tapas" },
+        { name: "Popular Sashimi", value: "popular-sashimi" },
+        { name: "Appetizer", value: "appetizer" },
+        { name: "Seasonal Specials", value: "seasonal-specials" },
+        { name: "Nigiri Sushi", value: "nigiri-sushi" },
+        { name: "Selected Sake", value: "selected-sake" },
+    ]
     return (
         <div className='container section_gap'>
             <div className='section_gap text-center'>
@@ -12,12 +20,11 @@ const MenuIndex = () => {
             </div>
             <div className='mt-10'>
                 <div className='flex flex-col flex-wrap md:flex-row md:items-center md:justify-center gap-3'>
-                    <button onClick={() => setMenuCategory("japanese-tapas")} className='menuItem_button_outLine'>Japanese Tapas</button>
-                    <button onClick={() => setMenuCategory("popular-sashimi")} className='menuItem_button_outLine'>Popular Sashimi</button>
-                    <button onClick={() => setMenuCategory("appetizer")} className='menuItem_button_fill'>Appetizer</button>
-                    <button onClick={() => setMenuCategory("seasonal-specials")} className='menuItem_button_outLine'>Seasonal Specials</button>
-                    <button onClick={() => setMenuCategory("nigiri-sushi")} className='menuItem_button_outLine'>Nigiri Sushi</button>
-                    <button onClick={() => setMenuCategory("selected-sake")} className='menuItem_button_outLine'>Selected Sake</button>
+                    {
+                        menuItems?.map((item, i) => (
+                            <button key={i} onClick={() => setMenuCategory(item?.value)} className='menuItem_button_outLine'>{item?.name}</button>
+                        ))
+                    }
                 </div>
             </div>
             <CartParent />

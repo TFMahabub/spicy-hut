@@ -9,3 +9,8 @@ export const useMenuCategory = () =>{
     const [menuCategory, setMenuCategory] = useState("");
     return{menuCategory, setMenuCategory}
 }
+
+export const useFavoriteIcon = () =>{
+    const [favorite, setFavorite] = useState(false)
+    return {favorite, setFavorite};
+}

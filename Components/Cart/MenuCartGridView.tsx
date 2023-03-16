@@ -2,8 +2,10 @@ import cardImage from "@/public/assats/selectedMenus.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { RiHeart3Fill, RiHeart3Line } from "react-icons/ri";
+import { useFavoriteIcon } from "../hook/useAllState";
 
 const MenuCartGridView = () => {
+    const { favorite, setFavorite } = useFavoriteIcon();
     return (
         <div className='border-[1px] border-secondary/30 hover:border-primary overflow-hidden rounded-lg text-secondary bg-[#000] group cursor-pointer'>
             <div>
@@ -13,8 +15,12 @@ const MenuCartGridView = () => {
                 <div className="flex items-center justify-between">
                     <h3 className="text-lg tracking-wide capitalize">this is cart</h3>
                     <div className="flex items-center gap-2">
-                        <RiHeart3Fill className="text-primary text-lg" />
-                        <RiHeart3Line className="text-lg" />
+                        {
+                            favorite ?
+                                <RiHeart3Fill onClick={() => setFavorite(!favorite)} className="text-primary text-lg" />
+                                :
+                                <RiHeart3Line onClick={() => setFavorite(!favorite)} className="text-lg" />
+                        }
                     </div>
                 </div>
                 <hr className="w-full h-[1px] text-secondary/30 my-1" />
