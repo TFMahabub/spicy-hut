@@ -1,9 +1,13 @@
+import { useSearchComponent } from "@/Components/hook/useAllState";
 import HmbargerMenu from "@/Components/Icons/HmbargerMenu";
+import Search from "@/Components/Icons/Search";
 import Link from "next/link";
 import { useState } from "react";
 
 const Navbar = () => {
   const [expandNavbar, setExpandNavbar] = useState(false);
+  const { searchComponent, setSearchComponent } = useSearchComponent();
+  // console.log(searchComponent)
   return (
     <section className="bg-bodyBackground/80 text-secondary absolute z-50 top-0 w-full">
       <div className="container flex justify-between items-center py-2">
@@ -42,6 +46,7 @@ const Navbar = () => {
             <Link href="/news">
               <li className="hover:text-primary duration-300">News</li>
             </Link>
+            <button onClick={() => setSearchComponent(pre => !pre)}><Search bg_color="#fff" width="1.4rem" /></button>
           </ul>
         </div>
         {expandNavbar && (

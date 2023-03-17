@@ -11,6 +11,11 @@ export const useMenuCategory = () =>{
 }
 
 export const useFavoriteIcon = () =>{
-    const [favorite, setFavorite] = useState(false)
+    const [favorite, setFavorite] = useState(false);
     return {favorite, setFavorite};
+}
+
+export const useSearchComponent = () =>{
+    const [searchComponent, setSearchComponent] = useState(false);
+    return {searchComponent, setSearchComponent}
 }
