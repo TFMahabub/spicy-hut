@@ -23,7 +23,8 @@ module.exports = {
       },
       backgroundImage: {
         'banner_background_image': "url('../public/assats/bannerImage.jpg')",
-        'selected_menus_background_image': "url(../public/assats/selectedMenus.jpg)",
+        'selected_menus_background_image': "url('../public/assats/selectedMenus.jpg')",
+        'news_background_image': "url('../public/assats/news-banner.jpg')",
       }
     },
   },

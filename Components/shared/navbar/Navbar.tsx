@@ -24,33 +24,31 @@ const Navbar = () => {
         </div>
         <div className={`hidden lg:block ${expandNavbar ? "" : ""}`}>
           <ul
-            className={`list-none p-5 flex space-x-4 ${
-              expandNavbar ? "flex-col" : ""
-            }`}
+            className={`list-none p-5 flex space-x-4 ${expandNavbar ? "flex-col" : ""
+              }`}
           >
             <Link href="/">
-              <li>Home</li>
+              <li className="hover:text-primary duration-300">Home</li>
             </Link>
             <Link href="/about">
-              <li>About</li>
+              <li className="hover:text-primary duration-300">About</li>
             </Link>
             <Link href="/contact">
-              <li>Contact</li>
+              <li className="hover:text-primary duration-300">Contact</li>
             </Link>
             <Link href="/menu">
-              <li>Menu</li>
+              <li className="hover:text-primary duration-300">Menu</li>
             </Link>
             <Link href="/news">
-              <li>News</li>
+              <li className="hover:text-primary duration-300">News</li>
             </Link>
           </ul>
         </div>
         {expandNavbar && (
           <div className="">
             <ul
-              className={`list-none p-5 flex space-x-4 ${
-                expandNavbar ? "flex-col" : ""
-              }`}
+              className={`list-none p-5 flex space-x-4 ${expandNavbar ? "flex-col" : ""
+                }`}
             >
               <Link href="/">
                 <li>Home</li>
