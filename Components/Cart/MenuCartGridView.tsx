@@ -1,4 +1,3 @@
-import cardImage from "@/public/assats/selectedMenus.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { RiHeart3Fill, RiHeart3Line } from "react-icons/ri";
@@ -8,8 +7,8 @@ const MenuCartGridView = () => {
     const { favorite, setFavorite } = useFavoriteIcon();
     return (
         <div className='border-[1px] border-secondary/30 hover:border-primary overflow-hidden rounded-lg text-secondary bg-[#000] group cursor-pointer'>
-            <div>
-                <Image src={cardImage} className="group-hover:scale-105 duration-300" alt="" />
+            <div className="relative">
+                <Image src={'https://i.ibb.co/6mmrZ5D/Addictive-Cabbage.jpg'} className="group-hover:scale-105 duration-300" alt="menu image" height={500} width={500} priority />
             </div>
             <div className="p-4">
                 <div className="flex items-center justify-between">
