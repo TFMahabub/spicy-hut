@@ -7,13 +7,13 @@ const SearchModalIndex = ({ setSearchComponent }: { setSearchComponent: any }) =
         <div className="fixed z-20 inset-0 bg-bodyBackground/60 ">
             <div className=" bg-bodyBackground mt-40 relative">
                 <div className="w-full absolute top-[-10px]">
-                    <span onClick={() => setSearchComponent((pre: any) => !pre)} className="hover:cursor-pointer"><DownArrow fill_color="#000" width="1.6rem" more_class="mx-auto bg-[#fff]/60 rounded-full" /></span>
+                    <span onClick={() => setSearchComponent((pre: any) => !pre)} className="hover:cursor-pointer"><DownArrow moreClass="mx-auto fill-bodyBackground bg-secondary/60 rounded-full " /></span>
                 </div>
                 <div className="container pt-8 space-y-8">
                     <div className="relative">
                         <label htmlFor=""></label>
                         <input type="text" name="search" id="search" placeholder="search text" className="w-full py-1 bg-bodyBackground border-[1px] border-secondary/80 tracking-wider placeholder:text-secondary/80 placeholder:font-light px-4 rounded-full text-secondary/80 font-light" />
-                        <Search bg_color="#fff" width="1.2rem" more_class="absolute my-auto right-0 inset-y-0  mr-3" />
+                        <Search moreClass="fill-secondary/80 absolute my-auto right-0 inset-y-0  mr-3" />
                     </div>
                     {/* ------------------------content------------------------ */}
                     <div>

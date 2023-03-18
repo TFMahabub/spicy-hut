@@ -45,7 +45,7 @@ const Navbar = ({ setSearchComponent }: { setSearchComponent: any }) => {
             <Link href="/news">
               <li className="hover:text-primary duration-300">News</li>
             </Link>
-            <button onClick={() => setSearchComponent((pre: any) => !pre)}><Search bg_color="#fff" width="1.4rem" more_class="" /></button>
+            <button onClick={() => setSearchComponent((pre: any) => !pre)}><Search moreClass={"fill-secondary hover:fill-primary duration-300"} /></button>
           </ul>
         </div>
         {expandNavbar && (
