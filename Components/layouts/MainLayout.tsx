@@ -1,3 +1,4 @@
+import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { useFavoriteIcon } from "../hook/useAllState";
 import SearchModalIndex from "../modal/SearchModal/SearchModalIndex";
@@ -15,10 +16,13 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       <Navbar setSearchComponent={setSearchComponent} />
       {children}
       <Footer />
-      {
-        searchComponent &&
-        <SearchModalIndex setSearchComponent={setSearchComponent} />
-      }
+      <AnimatePresence>
+
+        {
+          searchComponent &&
+          <SearchModalIndex setSearchComponent={setSearchComponent} />
+        }
+      </AnimatePresence>
     </div>
   );
 };

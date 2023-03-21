@@ -53,7 +53,7 @@ const Menus = () => {
         <p className="text-center">11:30 am to 2:30 pm</p>
         <div className="mt-3 flex flex-col gap-4 lg:gap-8">
           {lounshMenus?.map((menue, i) => (
-            <div>
+            <div key={i}>
               <div className="flex items-center justify-between">
                 <h6 className="text-lg tracking-wide lg:text-[22px]">
                   {menue?.name}
@@ -76,7 +76,7 @@ const Menus = () => {
         <p className=" text-center">5:30 pm to 10 pm</p>
         <div className="mt-3 flex flex-col gap-4 lg:gap-8">
           {dinnerMenus?.map((menue, i) => (
-            <div>
+            <div key={i}>
               <div className="flex items-center justify-between">
                 <h6 className="text-lg tracking-wide lg:text-[22px]">
                   {menue?.name}

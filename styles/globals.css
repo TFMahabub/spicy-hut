@@ -13,6 +13,19 @@ body {
   background-color: #0e0d0a;
   font-family: "Jost", sans-serif;
   scroll-behavior: smooth;
+  caret-color: #dd5903;
+}
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #dd5903;
+}
+
+::selection {
+  color: #fff;
+  background: #dd5903;
+}
+.scrollNone::-webkit-scrollbar {
+  display: none;
 }
 .container {
   @apply max-w-[1488px] mx-auto px-[1rem] md:px-[2rem] lg:px-[4rem];
