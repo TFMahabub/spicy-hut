@@ -51,6 +51,10 @@ body {
 .section_gap {
   @apply mt-[4rem] lg:mt-[7rem];
 }
+/* input------------------------------------ */
+.inputClass {
+  @apply bg-background-light py-2 lg:py-3 px-4 ring-0 outline-none font-light
+}
 /* Banner-content--------------------------- */
 .banner_title_text {
   @apply text-[2rem] md:text-6xl lg:text-7xl font-semibold text-center leading-9 lg:leading-none;
