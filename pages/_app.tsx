@@ -4,6 +4,8 @@ import "@/styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
+import { Provider } from "react-redux";
+import { store } from "./Redux/store";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -28,7 +30,9 @@ export default function App({ Component, pageProps }: AppProps) {
               }
             }}
           >
-            <Component {...pageProps} />
+            <Provider store={store}>
+              <Component {...pageProps} />
+            </Provider>
           </motion.div>
         </MainLayout>
       </AnimatePresence>

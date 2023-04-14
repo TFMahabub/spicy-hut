@@ -2,9 +2,20 @@ import EyeHide from "@/Components/Icons/EyeHide";
 import EyeShow from "@/Components/Icons/EyeShow";
 import Link from "next/link";
 import { useState } from 'react';
+import { useForm } from "react-hook-form";
 
+interface IFormInput {
+    email: string;
+    password: any;
+}
 const LoginPage = () => {
     const [passwordShow, setPasswordShow] = useState<boolean>(false);
+    //form input function-----------------------------------------------
+    const { register, handleSubmit } = useForm<IFormInput>();
+    const onSubmit = (formData: IFormInput) => {
+        console.log(formData)
+    }
+    //next-----------------------------------------------------
     return (
         <div className="text-secondary container grid_place_center min-h-screen ">
             <div className="w-full  text-center">
@@ -16,15 +27,15 @@ const LoginPage = () => {
                 </div>
                 <div className="mt-6 lg:mt-16 w-full flex flex-col lg:flex-row lg:justify-between">
                     {/* ------------with email and password------------ */}
-                    <div className=" flex flex-col gap-2 w-full">
+                    <form onSubmit={handleSubmit(onSubmit)} className=" flex flex-col gap-2 w-full">
                         <div className="px-0 lg:px-20">
                             <label htmlFor="email" />
-                            <input type="email" name="email" id="email" placeholder="Your Email" className="inputClass w-full placeholder:text-md border-2 border-background-light rounded-sm tracking-wider" />
+                            <input type="email" id="email" placeholder="Your Email" {...register("email")} className="inputClass w-full placeholder:text-md border-2 border-background-light rounded-sm tracking-wider" />
                         </div>
                         <div className="px-0 lg:px-20">
                             <div className="relative w-full">
                                 <label htmlFor="password" />
-                                <input type={passwordShow ? "text" : "password"} name="email" id="email" placeholder="Your Password" className="inputClass w-full placeholder:text-md border-2 border-background-light rounded-sm tracking-wider " />
+                                <input type={passwordShow ? "text" : "password"} id="password" placeholder="Your Password" {...register("password")} className="inputClass w-full placeholder:text-md border-2 border-background-light rounded-sm tracking-wider " />
                                 {
                                     !passwordShow &&
                                     <span onClick={() => setPasswordShow((pre: boolean) => !pre)} className="absolute transform translate-y-[50%] right-4 cursor-pointer">
@@ -40,9 +51,9 @@ const LoginPage = () => {
                             </div>
                         </div>
                         <div className="px-0 lg:px-20">
-                            <button className="bg-secondary/60 w-full py-2 lg:py-3 text-md border-2 border-secondary/60 rounded-sm text-background-light font-medium">Login to Your Account</button>
+                            <button type="submit" className="bg-secondary/60 w-full py-2 lg:py-3 text-md border-2 border-secondary/60 rounded-sm text-background-light font-medium">Login to Your Account</button>
                         </div>
-                    </div>
+                    </form>
                     {/* ------------with google, github, facebook------------ */}
                     <div className="mt-8 lg:mt-0 flex flex-col gap-2 w-full">
                         <div className="px-0 lg:px-20">
