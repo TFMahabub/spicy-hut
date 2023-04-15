@@ -48,8 +48,8 @@ const UserAuthentication = ({ children }: any) => {
 
 
     useEffect(() => {
-        const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            setUser(currentUser)
+        const unSubscribe = onAuthStateChanged(auth, currentLoginUser => {
+            setUser(currentLoginUser)
             setLoading(false)
         })
         return () => unSubscribe()
