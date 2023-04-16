@@ -24,16 +24,16 @@ const Footer = () => {
           </p>
         </a>
         <div className="mt-3 flex items-center justify-center gap-4">
-          <a href="http://facebook.com" target="_blank">
+          <a href="http://facebook.com" target="_blank" rel="noreferrer">
             <Facebook />
           </a>
-          <a href="http://youtube.com" target="_blank">
+          <a href="http://youtube.com" target="_blank" rel="noreferrer">
             <Youtube />
           </a>
-          <a href="http://twitter.com" target="_blank">
+          <a href="http://twitter.com" target="_blank" rel="noreferrer">
             <Twitter />
           </a>
-          <a href="http://instagram.com" target="_blank">
+          <a href="http://instagram.com" target="_blank" rel="noreferrer">
             <Instagram />
           </a>
         </div>

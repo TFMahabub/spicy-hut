@@ -69,7 +69,7 @@ const LoginPage = () => {
                 </div>
                 {/* ------------forget password------------ */}
                 <div className="mt-2 lg:mt-10 flex flex-col items-center">
-                    <Link href={"/sign_up"} className=""><span className="hover:text-secondary text-secondary/60 duration-300 underline text-sm tracking-wide">Don't have any account sign up?</span></Link>
+                    <Link href={"/sign_up"} className=""><span className="hover:text-secondary text-secondary/60 duration-300 underline text-sm tracking-wide">Don&apos;t have any account sign up?</span></Link>
                     <Link href={"/sign_up"} className=""><span className="hover:text-secondary text-secondary/60 duration-300 underline text-sm tracking-wide">Forget Password?</span></Link>
                 </div>
             </div>
