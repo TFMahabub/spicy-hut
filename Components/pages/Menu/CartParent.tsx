@@ -3,11 +3,12 @@ import MenuCartListView from '@/Components/Cart/MenuCartListView';
 import { useCartView, useMenuCategory } from '@/Components/hook/useAllState';
 import GridView from '@/Components/Icons/GridView';
 import ListView from '@/Components/Icons/ListView';
-import { useGetMenuItemsQuery } from '@/pages/Redux/api/apiSlice';
+import { useGetMenuItemsQuery } from '@/Redux/api/apiSlice';
 
 const CartParent = () => {
     // redux----------------------------------------
-    const { data: menuItems, isLoading, isError } = useGetMenuItemsQuery()
+    // const {} = useSelector((state:any)=>)
+    const { data: menuItems, isLoading, isError } = useGetMenuItemsQuery("name")
 
 
     const { cartView, setCartView } = useCartView();
