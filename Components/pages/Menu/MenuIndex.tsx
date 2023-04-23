@@ -6,12 +6,13 @@ const MenuIndex = () => {
     const { menuCategory, setMenuCategory } = useMenuCategory();
     console.log(menuCategory);
     const menuItems = [
-        { name: "Japanese Tapas", value: "japanese-tapas" },
-        { name: "Popular Sashimi", value: "popular-sashimi" },
+        { name: "All", value: "all" },
         { name: "Appetizer", value: "appetizer" },
-        { name: "Seasonal Specials", value: "seasonal-specials" },
         { name: "Nigiri Sushi", value: "nigiri-sushi" },
+        { name: "Popular Sashimi", value: "popular-sashimi" },
         { name: "Selected Sake", value: "selected-sake" },
+        { name: "Seasonal Specials", value: "seasonal-specials" },
+        { name: "Special", value: "specials" },
     ]
     return (
         <div className='container section_gap'>

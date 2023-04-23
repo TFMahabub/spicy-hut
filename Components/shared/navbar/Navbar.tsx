@@ -1,3 +1,4 @@
+import useCheck from "@/Components/hook/useCheck";
 import HmbargerMenu from "@/Components/Icons/HmbargerMenu";
 import Search from "@/Components/Icons/Search";
 import Link from "next/link";
@@ -5,6 +6,7 @@ import { useState } from "react";
 
 const Navbar = ({ setSearchComponent }: { setSearchComponent: any }) => {
   const [expandNavbar, setExpandNavbar] = useState(false);
+  const { setCheck } = useCheck()
   // const { searchComponent, setSearchComponent } = useSearchComponent();
   // console.log(searchComponent)
   return (
@@ -33,19 +35,22 @@ const Navbar = ({ setSearchComponent }: { setSearchComponent: any }) => {
             <Link href="/">
               <li className="hover:text-primary duration-300">Home</li>
             </Link>
-            <Link href="/about">
+            <Link href="/about/">
               <li className="hover:text-primary duration-300">About</li>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact/">
               <li className="hover:text-primary duration-300">Contact</li>
             </Link>
-            <Link href="/menu">
+            <Link href="/menu/">
               <li className="hover:text-primary duration-300">Menu</li>
             </Link>
-            <Link href="/news">
+            <Link href="/news/">
               <li className="hover:text-primary duration-300">News</li>
             </Link>
-            <button onClick={() => setSearchComponent((pre: any) => !pre)}><Search bg_color="#fff" width="1.4rem" more_class="" /></button>
+            <button onClick={() => {
+              setSearchComponent((pre: any) => !pre)
+              setCheck("checked")
+            }}><Search moreClass={"fill-secondary hover:fill-primary duration-300"} /></button>
           </ul>
         </div>
         {expandNavbar && (

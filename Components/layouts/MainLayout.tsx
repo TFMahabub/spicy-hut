@@ -1,24 +1,28 @@
+import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { useFavoriteIcon } from "../hook/useAllState";
+import useCheck from "../hook/useCheck";
 import SearchModalIndex from "../modal/SearchModal/SearchModalIndex";
 import Footer from "../shared/footer/Footer";
 import Navbar from "../shared/navbar/Navbar";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const [searchComponent, setSearchComponent] = useState(false);
-  const { favorite } = useFavoriteIcon()
+  const { check } = useCheck();
   // const { searchComponent } = useSearchComponent();
-  // console.log(favorite)
+  console.log(check)
   // const searchComponent = false;
   return (
     <div className="relative">
       <Navbar setSearchComponent={setSearchComponent} />
       {children}
       <Footer />
-      {
-        searchComponent &&
-        <SearchModalIndex setSearchComponent={setSearchComponent} />
-      }
+      <AnimatePresence>
+
+        {
+          searchComponent &&
+          <SearchModalIndex setSearchComponent={setSearchComponent} />
+        }
+      </AnimatePresence>
     </div>
   );
 };

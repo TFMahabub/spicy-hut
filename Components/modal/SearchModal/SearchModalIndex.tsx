@@ -1,19 +1,35 @@
 import SearchCart from "@/Components/Cart/SearchCart";
 import DownArrow from "@/Components/Icons/DownArrow";
 import Search from "@/Components/Icons/Search";
+import { motion } from "framer-motion";
 
 const SearchModalIndex = ({ setSearchComponent }: { setSearchComponent: any }) => {
+
     return (
-        <div className="fixed z-20 inset-0 bg-bodyBackground/60 ">
-            <div className=" bg-bodyBackground mt-40 relative">
-                <div className="w-full absolute top-[-10px]">
-                    <span onClick={() => setSearchComponent((pre: any) => !pre)} className="hover:cursor-pointer"><DownArrow fill_color="#000" width="1.6rem" more_class="mx-auto bg-[#fff]/60 rounded-full" /></span>
-                </div>
+        <motion.div
+            // key={searchComponent}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: .2 }}
+            className="fixed z-20 inset-0 bg-bodyBackground/60 overflow-y-scroll scrollNone">
+            <motion.div
+                // key={searchComponent}
+                initial={{ y: "100vh" }}
+                animate={{ y: 0 }}
+                exit={{ y: "100vh" }}
+                transition={{ duration: .4 }}
+                className=" bg-bodyBackground mt-40 relative pb-4">
                 <div className="container pt-8 space-y-8">
-                    <div className="relative">
+                    {/* <span
+                        onClick={() => setSearchComponent((pre: any) => !pre)} className="hover:cursor-pointer absolute left-[50%] top-3"><DownArrow moreClass="mx-auto fill-bodyBackground bg-secondary/60 rounded-lg" /></span> */}
+                    <span
+                        onClick={() => setSearchComponent((pre: any) => !pre)} className="hover:cursor-pointer absolute left-[50%] top-3"><DownArrow moreClass="w-[2.2rem] rounded-full hover:bg-secondary/10 h-[2.2rem] mx-auto fill-primary" /></span>
+                    <div className="flex items-center gap-[2px] border-[1px] border-secondary rounded-full overflow-hidden py-[6px] px-[8px]">
+                        <Search moreClass="fill-secondary/80" />
                         <label htmlFor=""></label>
-                        <input type="text" name="search" id="search" placeholder="search text" className="w-full py-1 bg-bodyBackground border-[1px] border-secondary/80 tracking-wider placeholder:text-secondary/80 placeholder:font-light px-4 rounded-full text-secondary/80 font-light" />
-                        <Search bg_color="#fff" width="1.2rem" more_class="absolute my-auto right-0 inset-y-0  mr-3" />
+                        <input type="text" name="" id="" placeholder="search text" className="bg-bodyBackground w-full ring-0 outline-none text-secondary/80 font-light tracking-wider placeholder:text-secondary/80 placeholder:font-light placeholder:tracking-wider placeholder:capitalize" />
+                        {/* <input type="text" name="search" id="search" placeholder="search text" className="w-full py-1 bg-bodyBackground border-[1px] border-secondary/80 tracking-wider placeholder:text-secondary/80 placeholder:font-light px-4 rounded-full text-secondary/80 font-light" /> */}
                     </div>
                     {/* ------------------------content------------------------ */}
                     <div>
@@ -30,8 +46,8 @@ const SearchModalIndex = ({ setSearchComponent }: { setSearchComponent: any }) =
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 

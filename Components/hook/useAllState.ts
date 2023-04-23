@@ -6,7 +6,7 @@ export const useCartView = () => {
 };
 
 export const useMenuCategory = () =>{
-    const [menuCategory, setMenuCategory] = useState("");
+    const [menuCategory, setMenuCategory] = useState("all");
     return{menuCategory, setMenuCategory}
 }
 

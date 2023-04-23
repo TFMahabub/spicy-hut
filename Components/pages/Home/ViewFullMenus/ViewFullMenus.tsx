@@ -22,7 +22,7 @@ const ViewFullMenus = () => {
             We serve food, harmony, and laughter. Making delicious food and
             providing a wonderful eating experience. update something
           </p>
-          <a href="http://" target="_blank" rel="noopener noreferrer" className="mt-5 button_border_animation_end_to_start text-secondary after:bg-primary text-center">BROWSE MENUS</a>
+          <a href="http://" target="_blank" rel="noreferrer" className="mt-5 button_border_animation_end_to_start text-secondary after:bg-primary text-center">BROWSE MENUS</a>
         </div>
       </div>
       <Image src={viewFullMenus2} className="" alt="" />
@@ -40,7 +40,7 @@ const ViewFullMenus = () => {
             We present delicious and enticing dishes with high-quality
             ingredients. There is no set protocol for ordering from the menu.
           </p>
-          <a href="http://" target="_blank" rel="noopener noreferrer" className="mt-5 button_border_animation_end_to_start text-secondary after:bg-primary text-center">LEARN MORE</a>
+          <a href="http://" target="_blank" rel="noreferrer" className="mt-5 button_border_animation_end_to_start text-secondary after:bg-primary text-center">LEARN MORE</a>
         </div>
       </div>
       <Image src={viewFullMenus3} className="" alt="" />

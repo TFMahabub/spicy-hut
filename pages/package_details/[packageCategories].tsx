@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-const packageCategories = () => {
+const PackageCategories = () => {
   const { packageCategories } = useRouter().query;
   return (
     <div className="grid place-items-center h-screen">
@@ -15,4 +15,4 @@ const packageCategories = () => {
   );
 };
 
-export default packageCategories;
+export default PackageCategories;
