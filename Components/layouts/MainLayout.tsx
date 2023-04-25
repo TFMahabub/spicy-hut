@@ -9,7 +9,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const [searchComponent, setSearchComponent] = useState(false);
   const { check } = useCheck();
   // const { searchComponent } = useSearchComponent();
-  console.log(check)
+  // console.log(check)
   // const searchComponent = false;
   return (
     <div className="relative">

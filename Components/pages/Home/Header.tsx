@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   const { check } = useCheck()
-  console.log(check)
+  // console.log(check)
   return (
     <header className="container grid_place_center space-y-md">
       <h2 className="banner_title_text font-cormorant text-secondary uppercase">

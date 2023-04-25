@@ -15,7 +15,7 @@ const SignupPage = () => {
     //form input function-----------------------------------------------
     const { register, handleSubmit, watch } = useForm<IFormInput>();
     const { name: currentName, email: currentEmail, password: currentPassword } = watch();
-    console.log(currentEmail);
+    // console.log(currentEmail);
     useEffect(() => {
         const subscription = watch((data: object) => {
         })
@@ -24,7 +24,7 @@ const SignupPage = () => {
         }
     }, [watch])
     const onSubmit = (formData: IFormInput) => {
-        console.log(formData)
+        // console.log(formData)
     }
     //next-----------------------------------------------------
 
