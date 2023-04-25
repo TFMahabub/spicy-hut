@@ -13,7 +13,7 @@ const CartParent = () => {
 
     const { cartView, setCartView } = useCartView();
     const { menuCategory } = useMenuCategory();
-    console.log(menuItems)
+    // console.log(menuItems)
 
     //filtering by category-------------------------
     const globalsItems = menuItems?.filter((item: any) => (

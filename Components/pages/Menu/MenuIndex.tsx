@@ -4,7 +4,7 @@ import CartParent from './CartParent';
 
 const MenuIndex = () => {
     const { menuCategory, setMenuCategory } = useMenuCategory();
-    console.log(menuCategory);
+    // console.log(menuCategory);
     const menuItems = [
         { name: "All", value: "all" },
         { name: "Appetizer", value: "appetizer" },

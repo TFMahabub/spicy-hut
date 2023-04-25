@@ -13,7 +13,7 @@ const LoginPage = () => {
     //form input function-----------------------------------------------
     const { register, handleSubmit } = useForm<IFormInput>();
     const onSubmit = (formData: IFormInput) => {
-        console.log(formData)
+        // console.log(formData)
     }
     //next-----------------------------------------------------
     return (
