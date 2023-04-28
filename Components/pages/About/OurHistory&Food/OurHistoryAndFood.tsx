@@ -1,6 +1,4 @@
 import SectionTitle from "@/Components/reusedComponents/SectionTitle";
-import sideImage from "@/public/assats/aboutUs(OurHistoryandFood).jpg";
-import sideImage2 from "@/public/assats/aboutUs(OurHistoryandFood2).jpg";
 import Image from "next/image";
 
 const OurHistoryAndFood = () => {
@@ -28,16 +26,24 @@ const OurHistoryAndFood = () => {
         </div>
       </div>
       <div className="flex-1 lg:relative lg:overflow-hidden">
-        <Image
-          src={sideImage}
-          className="w-full lg:absolute lg:w-[60%] lg:z-10 lg:top-0 lg:right-0"
-          alt=""
-        />
-        <Image
-          src={sideImage2}
-          className="hidden lg:block lg:absolute lg:w-[60%] lg:bottom-0 lg:left-0"
-          alt=""
-        />
+        <div className="relative h-full w-full lg:absolute lg:w-[60%] lg:z-10 lg:top-0 lg:right-0">
+          <Image
+            src="https://i.ibb.co/GngXZf2/about-Us-Our-Historyand-Food.jpg"
+            objectFit="cover"
+            objectPosition="center"
+            layout="fill"
+            alt=""
+          />
+        </div>
+        <div className="relative hidden lg:h-full lg:block lg:absolute lg:w-[60%] lg:bottom-0 lg:left-0">
+          <Image
+            src="https://i.ibb.co/VqzGN0r/about-Us-Our-Historyand-Food2.jpg"
+            objectFit="cover"
+            objectPosition="center"
+            layout="fill"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

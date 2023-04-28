@@ -1,12 +1,15 @@
 import SectionTitle from "@/Components/reusedComponents/SectionTitle";
-import sideImage from "@/public/assats/aboutUs(we_are_hiring).jpg";
 import Image from "next/image";
 
 const WeAreHiring = () => {
   return (
     <div className="section_gap container flex flex-col lg:flex-row gap-16 justify-between">
-      <div className="flex-1">
-        <Image src={sideImage} className="w-full h-full" alt="" />
+      <div className="flex-1 relative">
+        <Image src="https://i.ibb.co/HB8CH65/about-Us-we-are-hiring.jpg"
+          objectFit="cover"
+          objectPosition="center"
+          layout="fill"
+          alt="" />
       </div>
       <div className="flex-1 lg:flex lg:flex-col lg:justify-between">
         <div>

@@ -1,15 +1,16 @@
-import aboutImage from "@/public/assats/aboutUs(shape).jpg";
 import Image from "next/image";
 
 const DemoImage = () => {
   return (
-    <div className="relative">
+    <div className="relative h-screen section_gap">
       <Image
-        src={aboutImage}
-        className="h-screen w-full bg-no-repeat bg-center section_gap"
+        src="https://i.ibb.co/g9v5xLM/about-Us-shape.jpg"
+        objectFit="cover"
+        objectPosition="center"
+        layout="fill"
         alt=""
       />
-      <div className="bg-bodyBackground/50 w-full h-full absolute top-0 left-0"></div>
+      <div className="absolute inset-0 bg-[rgba(0,0,0,0.7)]"></div>
     </div>
   );
 };

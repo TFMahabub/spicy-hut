@@ -50,10 +50,10 @@ const CartParent = () => {
     if (!isLoading && !isError && menuItems.length > 0) {
         menuItemContent = <div className={`mt-10 grid grid-cols-1 ${cartView === "grid-view" && "md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"} ${cartView === "list-view" && "md:grid-cols-1 lg:grid-cols-2"} gap-5`}>
             {cartView === "grid-view" &&
-                menuItems.map((item: any) => <MenuCartGridView key={item._id} />)
+                menuItems.map((item: any) => <MenuCartGridView key={item._id} item={item} />)
             }
             {cartView === "list-view" &&
-                [...Array(10)].map((_, i) => <MenuCartListView key={i} />)
+                menuItems.map((item: any) => <MenuCartListView key={item._id} item={item} />)
             }
         </div>
     }

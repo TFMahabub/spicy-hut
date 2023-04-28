@@ -1,6 +1,4 @@
 import SectionTitle from "@/Components/reusedComponents/SectionTitle";
-import sideImage from "@/public/assats/home(FOUNDED).jpg";
-import sideImage2 from "@/public/assats/home(FOUNDED)2.jpg";
 import Image from "next/image";
 
 const FoundedIn1998 = () => {
@@ -16,10 +14,13 @@ const FoundedIn1998 = () => {
             topTextCenter={false}
           />
         </div>
-        <Image src={sideImage2} className="" alt="" />
+        <div className="relative h-full mt-6 w-full">
+          <Image src={"https://i.ibb.co/jLQgDFx/home-FOUNDED-2.jpg"} alt="founded in" objectFit="cover" objectPosition="center" layout="fill" />
+        </div>
       </div>
-      <div className="flex-1">
-        <Image src={sideImage} className="" alt="" />
+      {/* this height h-screen will be the the full section height */}
+      <div className="flex-1 h-screen relative">
+        <Image src={"https://i.ibb.co/Rcb1y7T/home-FOUNDED.jpg"} alt="founded in" objectFit="cover" objectPosition="center" layout="fill" />
       </div>
     </div>
   );
