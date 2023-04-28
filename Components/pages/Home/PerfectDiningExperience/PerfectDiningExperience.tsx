@@ -1,14 +1,13 @@
 import SectionTitle from "@/Components/reusedComponents/SectionTitle";
-import sideImage1 from "@/public/assats/home(BeautifullQuiet1).jpg";
-import sideImage2 from "@/public/assats/home(BeautifullQuiet2).jpg";
 import Image from "next/image";
 import Link from "next/link";
 
 const PerfectDiningExperience = () => {
   return (
     <div className="section_gap container flex flex-col lg:flex-row gap-10 justify-between">
-      <div className="flex-1">
-        <Image src={sideImage1} className="" alt="" />
+      {/* this height h-screen will be the the full section height */}
+      <div className="flex-1 h-screen relative">
+        <Image src={"https://i.ibb.co/DMs8wwF/home-Beautifull-Quiet1.jpg"} alt="founded in" objectFit="cover" objectPosition="center" layout="fill" />
       </div>
       <div className="flex-1 lg:flex lg:flex-col lg:justify-between">
         <div>
@@ -31,7 +30,9 @@ const PerfectDiningExperience = () => {
             </p>
           </Link>
         </div>
-        <Image src={sideImage2} className="" alt="" />
+        <div className="relative h-full mt-6 w-full">
+          <Image src={"https://i.ibb.co/VxmCc6x/home-Beautifull-Quiet2.jpg"} alt="founded in" objectFit="cover" objectPosition="center" layout="fill" />
+        </div>
       </div>
     </div>
   );

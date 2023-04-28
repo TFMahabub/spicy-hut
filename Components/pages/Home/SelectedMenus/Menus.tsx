@@ -44,51 +44,53 @@ const Menus = () => {
     },
   ];
   return (
-    <div className="container py-5 lg:py-0 flex flex-col gap-4 lg:gap-0 lg:flex-row lg:items-center justify-center lg:justify-around h-full w-full">
-      {/* -----------------menu----------------- */}
-      <div className="border-2 border-secondary p-7 lg:p-11 text-secondary lg:min-w-[400px] bg-bodyBackground/70">
-        <h6 className="text-lg lg:text-[26px] font-cormorant font-bold text-center">
-          LUNCH SPECIAL
-        </h6>
-        <p className="text-center">11:30 am to 2:30 pm</p>
-        <div className="mt-3 flex flex-col gap-4 lg:gap-8">
-          {lounshMenus?.map((menue, i) => (
-            <div key={i}>
-              <div className="flex items-center justify-between">
-                <h6 className="text-lg tracking-wide lg:text-[22px]">
-                  {menue?.name}
-                </h6>
-                <hr className="border-l-0 w-[10%] border-r-0 border-1 border-secondary" />
-                <h6 className="text-lg tracking-wide lg:text-[22px]">
-                  ${menue?.price}
-                </h6>
+    <div className="absolute inset-0 bg-[rgba(0,0,0,0.5)]">
+      <div className="container py-5 lg:py-0 flex flex-col gap-4 lg:gap-0 lg:flex-row lg:items-center justify-center lg:justify-around h-full w-full">
+        {/* -----------------menu----------------- */}
+        <div className="border-2 border-secondary p-7 lg:p-11 text-secondary lg:min-w-[400px] bg-bodyBackground/70">
+          <h6 className="text-lg lg:text-[26px] font-cormorant font-bold text-center">
+            LUNCH SPECIAL
+          </h6>
+          <p className="text-center">11:30 am to 2:30 pm</p>
+          <div className="mt-3 flex flex-col gap-4 lg:gap-8">
+            {lounshMenus?.map((menue, i) => (
+              <div key={i}>
+                <div className="flex items-center justify-between">
+                  <h6 className="text-lg tracking-wide lg:text-[22px]">
+                    {menue?.name}
+                  </h6>
+                  <hr className="border-l-0 w-[10%] border-r-0 border-1 border-secondary" />
+                  <h6 className="text-lg tracking-wide lg:text-[22px]">
+                    ${menue?.price}
+                  </h6>
+                </div>
+                <p className="text-secondary/50">{menue?.japanese}</p>
               </div>
-              <p className="text-secondary/50">{menue?.japanese}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      {/* -----------------menu----------------- */}
-      <div className="border-2 border-secondary p-7 lg:p-11 text-secondary lg:min-w-[400px] bg-bodyBackground/70">
-        <h6 className="text-lg lg:text-[26px] font-cormorant font-bold text-center">
-          DINNER SPECIAL
-        </h6>
-        <p className=" text-center">5:30 pm to 10 pm</p>
-        <div className="mt-3 flex flex-col gap-4 lg:gap-8">
-          {dinnerMenus?.map((menue, i) => (
-            <div key={i}>
-              <div className="flex items-center justify-between">
-                <h6 className="text-lg tracking-wide lg:text-[22px]">
-                  {menue?.name}
-                </h6>
-                <hr className="border-l-0 w-[10%] border-r-0 border-1 border-secondary" />
-                <h6 className="text-lg tracking-wide lg:text-[22px]">
-                  ${menue?.price}
-                </h6>
+        {/* -----------------menu----------------- */}
+        <div className="border-2 border-secondary p-7 lg:p-11 text-secondary lg:min-w-[400px] bg-bodyBackground/70">
+          <h6 className="text-lg lg:text-[26px] font-cormorant font-bold text-center">
+            DINNER SPECIAL
+          </h6>
+          <p className=" text-center">5:30 pm to 10 pm</p>
+          <div className="mt-3 flex flex-col gap-4 lg:gap-8">
+            {dinnerMenus?.map((menue, i) => (
+              <div key={i}>
+                <div className="flex items-center justify-between">
+                  <h6 className="text-sm lg:text-lg tracking-wide lg:text-[22px]">
+                    {menue?.name}
+                  </h6>
+                  <hr className="border-l-0 w-[10%] border-r-0 border-1 border-secondary" />
+                  <h6 className="text-sm lg:text-lg tracking-wide lg:text-[22px]">
+                    ${menue?.price}
+                  </h6>
+                </div>
+                <p className="text-secondary/50">{menue?.japanese}</p>
               </div>
-              <p className="text-secondary/50">{menue?.japanese}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -3,17 +3,16 @@ import DemoImage from "@/Components/pages/About/Image/DemoImage";
 import OurHistoryAndFood from "@/Components/pages/About/OurHistory&Food/OurHistoryAndFood";
 import SophisticatedInterpretation from "@/Components/pages/About/SophisticatedInterpretation/SophisticatedInterpretation";
 import WeAreHiring from "@/Components/pages/About/WeAreHiring/WeAreHiring";
-import BackgroundImageOverlay from "@/Components/reusedComponents/BackgroundImageOverlay";
+import RestPageBannerImageOverlay from "@/Components/reusedComponents/RestPageBannerImageOverlay";
 
 const about = () => {
   return (
     <>
-      <BackgroundImageOverlay
-        height="h-[550px]"
-        bgImage="bg-selected_menus_background_image"
+      <RestPageBannerImageOverlay
+        src="https://i.ibb.co/k3PjxBF/selected-Menus.jpg"
       >
         <AboutHeader />
-      </BackgroundImageOverlay>
+      </RestPageBannerImageOverlay>
       <SophisticatedInterpretation />
       <DemoImage />
       <OurHistoryAndFood />

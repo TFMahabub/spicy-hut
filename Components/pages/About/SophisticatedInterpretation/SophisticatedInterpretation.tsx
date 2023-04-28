@@ -1,14 +1,13 @@
 import SectionTitle from "@/Components/reusedComponents/SectionTitle";
-import sideImage from "@/public/assats/aboutUs(resturent).jpg";
 import Image from "next/image";
 
 const SophisticatedInterpretation = () => {
   return (
     <div className="section_gap container flex flex-col-reverse lg:flex-row gap-16 justify-between">
-      <div className="flex-1">
-        <Image src={sideImage} className="h-full" alt="" />
+      <div className="flex-1 relative">
+        <Image src="https://i.ibb.co/gdqH9bz/about-Us-resturent.jpg" alt="" objectFit="cover" objectPosition="center" layout="fill" />
       </div>
-      <div className="flex-1 lg:flex lg:flex-col lg:justify-between">
+      <div className="flex-1 lg:flex lg:flex-col lg:justify-between h-screen">
         <div>
           <SectionTitle
             topText="FOUNDED IN 1998"

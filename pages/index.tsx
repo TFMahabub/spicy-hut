@@ -3,17 +3,14 @@ import Header from "@/Components/pages/Home/Header";
 import PerfectDiningExperience from "@/Components/pages/Home/PerfectDiningExperience/PerfectDiningExperience";
 import SelectedMenus from "@/Components/pages/Home/SelectedMenus/SelectedMenus";
 import ViewFullMenus from "@/Components/pages/Home/ViewFullMenus/ViewFullMenus";
-import BackgroundImageOverlay from "@/Components/reusedComponents/BackgroundImageOverlay";
+import HompageBannerImageOverlay from "@/Components/reusedComponents/HompageBannerImageOverlay";
 
 export default function Home() {
   return (
     <>
-      <BackgroundImageOverlay
-        height="h-screen"
-        bgImage="bg-banner_background_image"
-      >
+      <HompageBannerImageOverlay src="https://i.ibb.co/5KMVfp7/banner-Image.jpg">
         <Header />
-      </BackgroundImageOverlay>
+      </HompageBannerImageOverlay>
       <FoundedIn1998 />
       <SelectedMenus />
       <ViewFullMenus />
