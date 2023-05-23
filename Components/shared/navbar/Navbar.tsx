@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <section className="bg-bodyBackground text-secondary absolute z-50 top-0 w-full">
-      <div className="container flex justify-between items-center py-2">
+      <div className="container flex justify-between items-center py-">
         <div className="items-center flexBetween py-2 px-6">
           <Link href="/">
             <li className="list-none inline-block text-blck font-semibold tracking-wider text-primary text-2xl">

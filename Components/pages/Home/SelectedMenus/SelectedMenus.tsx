@@ -21,7 +21,7 @@ const SelectedMenus = () => {
           <Menus />
         </div>
       </div> */}
-      <div className="relative h-screen w-full">
+      <div className="relative h-[54rem] lg:h-screen w-full">
         <Image src="https://i.ibb.co/k3PjxBF/selected-Menus.jpg" alt="banner image" objectFit="cover" objectPosition="center" layout="fill" />
         <Menus />
       </div>
