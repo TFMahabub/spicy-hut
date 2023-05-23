@@ -9,6 +9,7 @@ const SearchModalIndex = () => {
     // redux-------------------------
     const { searchOpenClose } = useSelector((state: any) => state.navbarSlice)
     const dispatch = useDispatch();
+
     return (
         <motion.div
             // key={searchComponent}
