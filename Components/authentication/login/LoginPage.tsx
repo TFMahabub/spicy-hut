@@ -1,21 +1,45 @@
 import EyeHide from "@/Components/Icons/EyeHide";
 import EyeShow from "@/Components/Icons/EyeShow";
+import { loginUserWithFirebase } from "@/Redux/auth/authSlice";
 import Link from "next/link";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
+import { useDispatch } from "react-redux";
 
 interface IFormInput {
     email: string;
     password: any;
 }
 const LoginPage = () => {
+    //redux--------------------------------------------------------
+    const dispatch = useDispatch()
+
+
+    //state-------------------------------------------------------------
+    const [passwordError, setPasswordError] = useState<boolean>(false);
     const [passwordShow, setPasswordShow] = useState<boolean>(false);
+
+
     //form input function-----------------------------------------------
-    const { register, handleSubmit } = useForm<IFormInput>();
+    const { register, handleSubmit, watch } = useForm<IFormInput>();
+    const { email: currentEmail, password: currentPassword } = watch();
+
+    console.log(currentPassword);
+    useEffect(() => {
+        if (currentPassword?.length && currentPassword?.length < 6) {
+            setPasswordError(true)
+        } else {
+            setPasswordError(false)
+        }
+    }, [currentPassword])
+
     const onSubmit = (formData: IFormInput) => {
-        // console.log(formData)
+        console.log(formData)
+        dispatch<any>(loginUserWithFirebase({
+            email: formData?.email,
+            password: formData?.password
+        }))
     }
-    //next-----------------------------------------------------
     return (
         <div className="text-secondary container grid_place_center min-h-screen ">
             <div className="w-full  text-center">
@@ -49,6 +73,12 @@ const LoginPage = () => {
                                     </span>
                                 }
                             </div>
+                            {passwordError &&
+                                <span className=" w-full block bg-primary/10 my-2 py-1">
+                                    <small className="text-start text-primary">password should be 6 carecter
+                                    </small>
+                                </span>
+                            }
                         </div>
                         <div className="px-0 lg:px-20">
                             <button type="submit" className="bg-secondary/60 w-full py-2 lg:py-3 text-md border-2 border-secondary/60 rounded-sm text-background-light font-medium">Login to Your Account</button>

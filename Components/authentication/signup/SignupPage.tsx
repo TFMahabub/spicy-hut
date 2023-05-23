@@ -113,7 +113,8 @@ const SignupPage = () => {
                                 <span className=" w-full block bg-primary/10 my-2 py-1">
                                     <small className="text-start text-primary">password should be 6 carecter
                                     </small>
-                                </span>}
+                                </span>
+                            }
                         </div>
                         <div className="">
                             <button

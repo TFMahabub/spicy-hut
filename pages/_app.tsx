@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
+
   return (
     <AnimatePresence>
       <motion.div
