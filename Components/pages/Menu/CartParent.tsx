@@ -1,7 +1,8 @@
 import MenuCartGridView from '@/Components/Cart/MenuCartGridView';
 import MenuCartListView from '@/Components/Cart/MenuCartListView';
+import useGetLocalHost from '@/Components/hook/useGetLocalHost';
 import { useGetMenuItemsQuery } from '@/Redux/api/apiSlice';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import CartTopHeader from './CartTopHeader';
 import { MenuCardType } from './MenuTypeScript/MenuTypeScript';
@@ -16,7 +17,14 @@ const CartParent = () => {
 
 
     //state----------------------------------------
-    const [cartView, setCartView] = useState("");
+    const [cartView, setCartView] = useState("grid-view");
+
+    useEffect(() => {
+        const getMenuCardVIews: any = useGetLocalHost("menuCardViews")
+        if (getMenuCardVIews) {
+            setCartView(getMenuCardVIews)
+        }
+    }, [cartView])
 
     //filtering by category-------------------------
     const globalsItems = menuItems?.filter((item: MenuCardType) => (

@@ -1,6 +1,6 @@
 import GridView from "@/Components/Icons/GridView";
 import ListView from "@/Components/Icons/ListView";
-import { useEffect } from "react";
+import useSetLocalHost from "@/Components/hook/useSetLocalHost";
 
 interface PropsType {
     setCartView: (pr: string) => void;
@@ -10,14 +10,10 @@ interface PropsType {
 const CartTopHeader = ({ setCartView, cartView }: PropsType) => {
 
     const handleSetView = (view: string): void => {
-        localStorage.setItem("menuCardViews", JSON.stringify(view))
-        const parsJSON = JSON.parse(localStorage.getItem("menuCardViews") || "")
-        setCartView(parsJSON)
+        useSetLocalHost("menuCardViews", view)
+        setCartView(view)
     }
-    useEffect(() => {
-        const parseData = JSON.parse(localStorage.getItem("menuCardViews") || "")
-        setCartView(parseData)
-    }, [])
+
     return (
         <div className='mt-16 flex items-center md:relative text-lg gap-4'>
             <div className='flex flex-col md:flex-row md:items-center gap-4 md:absolute bg-bodyBackground pr-6'>

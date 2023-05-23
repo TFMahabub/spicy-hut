@@ -8,6 +8,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   // redux-------------------------
   const { searchOpenClose } = useSelector((state: any) => state.navbarSlice)
   const dispatch = useDispatch();
+
   return (
     <div className="relative">
       <Navbar />
