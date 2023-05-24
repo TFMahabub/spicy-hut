@@ -9,11 +9,11 @@ const Footer = () => {
       <div className="container px-[100px] py-12 border-t-[1px] border-secondary/20 section_gap">
         {/* <Image src={} className="" alt="" /> */}
         <p className="pText text-center">212 Madison Ave, New York, NY 10016</p>
-        <div className="flex items-center justify-center gap-2 text-secondary tracking-wide text-lg leading-relaxed">
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-2 text-secondary tracking-wide text-lg leading-relaxed">
           <a href="http://" className="hover:text-primary duration-500">
             contact@patiotime.com
           </a>
-          <p>|</p>
+          <p className="hidden md:block">|</p>
           <a href="http://" className="hover:text-primary duration-500">
             booking@patiotime.com
           </a>

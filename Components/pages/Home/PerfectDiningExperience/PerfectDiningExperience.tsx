@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const PerfectDiningExperience = () => {
   return (
-    <div className="section_gap container flex flex-col lg:flex-row gap-10 justify-between">
+    <div className="section_gap container flex flex-col-reverse lg:flex-row gap-10 justify-between">
       {/* this height h-screen will be the the full section height */}
-      <div className="flex-1 h-screen relative">
+      <div className="lg:flex-1 h-96 lg:h-screen relative">
         <Image src={"https://i.ibb.co/DMs8wwF/home-Beautifull-Quiet1.jpg"} alt="founded in" objectFit="cover" objectPosition="center" layout="fill" />
       </div>
-      <div className="flex-1 lg:flex lg:flex-col lg:justify-between">
+      <div className="lg:flex-1 lg:flex lg:flex-col lg:justify-between">
         <div>
           <SectionTitle
             topText="BEAUTIFUL QUIET SPACE"

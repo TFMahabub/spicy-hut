@@ -59,7 +59,7 @@ body {
 }
 /* Banner-content--------------------------- */
 .banner_title_text {
-  @apply text-[2rem] md:text-6xl lg:text-7xl font-semibold text-center leading-9 lg:leading-none;
+  @apply text-[1.5rem] md:text-6xl lg:text-7xl font-semibold text-center leading-9 lg:leading-none;
 }
 
 /* section-title----------------------------- */

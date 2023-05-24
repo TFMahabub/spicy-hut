@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const ViewFullMenus = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      <div className="relative">
+    <div className="section_gap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="relative h-96 lg:h-full">
         <Image src="https://i.ibb.co/pXjZtHy/home-view-full-menu1.jpg" objectFit="cover" objectPosition="center" alt="" layout="fill" />
       </div>
       <div className="grid_place_center lg:h-screen">
@@ -23,7 +23,7 @@ const ViewFullMenus = () => {
           <a href="http://" target="_blank" rel="noreferrer" className="mt-5 button_border_animation_end_to_start text-secondary after:bg-primary text-center">BROWSE MENUS</a>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative h-96 lg:h-full">
         <Image src="https://i.ibb.co/yggschM/home-view-full-menu2.jpg" objectFit="cover" objectPosition="center" alt="" layout="fill" />
       </div>
       <div className="grid_place_center lg:h-screen">
@@ -43,10 +43,10 @@ const ViewFullMenus = () => {
           <a href="http://" target="_blank" rel="noreferrer" className="mt-5 button_border_animation_end_to_start text-secondary after:bg-primary text-center">LEARN MORE</a>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative h-96 lg:h-full">
         <Image src="https://i.ibb.co/tLQqfhm/home-view-full-menu3.jpg" objectFit="cover" objectPosition="center" alt="" layout="fill" />
       </div>
-      <div className="relative">
+      <div className="relative h-96 lg:h-full">
         <Image src="https://i.ibb.co/748WP84/home-view-full-menu4.jpg" objectFit="cover" objectPosition="center" alt="" layout="fill" />
       </div>
     </div>
